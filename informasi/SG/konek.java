@@ -29,8 +29,8 @@ public class konek {
         return con;
     }
 
-    static Connection getkonekDB() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    //static Connection getkonekDB() {
+      //  throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    //}
 }
  
