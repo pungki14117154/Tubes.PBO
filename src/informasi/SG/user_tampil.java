@@ -59,13 +59,21 @@ public class user_tampil extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         info_sg = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
+        klik_daftar = new javax.swing.JButton();
+        klik_unggah = new javax.swing.JButton();
+        klik_unduh = new javax.swing.JButton();
+        klik_login = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
+        info_sg.setBackground(new java.awt.Color(204, 255, 102));
         info_sg.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         info_sg.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         info_sg.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
+                {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
@@ -89,35 +97,78 @@ public class user_tampil extends javax.swing.JFrame {
         info_sg.setToolTipText("");
         jScrollPane1.setViewportView(info_sg);
 
-        jLabel1.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 24)); // NOI18N
-        jLabel1.setText("INFORMASI STADIUM GENERAL");
+        getContentPane().add(jScrollPane1);
+        jScrollPane1.setBounds(20, 120, 762, 210);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(192, 192, 192)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 762, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(194, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(53, 53, 53)
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(260, Short.MAX_VALUE))
-        );
+        jLabel1.setBackground(new java.awt.Color(102, 0, 102));
+        jLabel1.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 28)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("INFORMASI STADIUM GENERAL");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(20, 70, 470, 37);
+
+        klik_daftar.setFont(new java.awt.Font("Nirmala UI", 1, 14)); // NOI18N
+        klik_daftar.setText("DAFTAR");
+        klik_daftar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                klik_daftarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(klik_daftar);
+        klik_daftar.setBounds(149, 354, 87, 31);
+
+        klik_unggah.setFont(new java.awt.Font("Nirmala UI", 1, 14)); // NOI18N
+        klik_unggah.setText("UNGGAH");
+        klik_unggah.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                klik_unggahActionPerformed(evt);
+            }
+        });
+        getContentPane().add(klik_unggah);
+        klik_unggah.setBounds(254, 354, 95, 31);
+
+        klik_unduh.setFont(new java.awt.Font("Nirmala UI", 1, 14)); // NOI18N
+        klik_unduh.setText("UNDUH");
+        klik_unduh.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                klik_unduhActionPerformed(evt);
+            }
+        });
+        getContentPane().add(klik_unduh);
+        klik_unduh.setBounds(367, 355, 85, 29);
+
+        klik_login.setFont(new java.awt.Font("Nirmala UI", 1, 14)); // NOI18N
+        klik_login.setText("LOGIN ADM");
+        klik_login.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                klik_loginActionPerformed(evt);
+            }
+        });
+        getContentPane().add(klik_login);
+        klik_login.setBounds(470, 355, 113, 29);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/informasi/SG/screen-1.jpg"))); // NOI18N
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(-20, 0, 870, 490);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void klik_unduhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_klik_unduhActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_klik_unduhActionPerformed
+
+    private void klik_unggahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_klik_unggahActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_klik_unggahActionPerformed
+
+    private void klik_daftarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_klik_daftarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_klik_daftarActionPerformed
+
+    private void klik_loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_klik_loginActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_klik_loginActionPerformed
 
     /**
      * @param args the command line arguments
@@ -157,6 +208,11 @@ public class user_tampil extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable info_sg;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JButton klik_daftar;
+    private javax.swing.JButton klik_login;
+    private javax.swing.JButton klik_unduh;
+    private javax.swing.JButton klik_unggah;
     // End of variables declaration//GEN-END:variables
 }
